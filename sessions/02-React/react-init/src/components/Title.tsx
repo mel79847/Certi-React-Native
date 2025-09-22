@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function usePaulState(initial) {
+function useMelState(initial) {
     let stateValue = initial;
     const setValue = (value) => {
         stateValue = value;
@@ -10,10 +10,9 @@ function usePaulState(initial) {
 
 export const Title = ({ name, title }) => {
     const [lastname, setLastname] = useState();
-    // solo se ejecute la primera vez 
 
     useEffect(()=> {
-      setLastname('Landaeta');
+      setLastname('sonco');
     }, []);
   return (
     <>
